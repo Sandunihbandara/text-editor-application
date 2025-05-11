@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Text Editor</title>
+
+  <!-- Bootstrap links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark">
+    <div class="container-fluid justify-content-center">
+      <span class="navbar-brand mb-0 h1">Online Text Editor</span>
+    </div>
+  </nav>
+
+  <div class="content container my-4">
+    <!-- Tool bar -->
+    <div class="btn-toolbar" role="toolbar">
+
+      <div class="btn-group">
+        <button class="btn btn-default" data-edit="bold" title="Bold"><i class="fa fa-bold"></i></button>
+        <button class="btn btn-default" data-edit="italic" title="Italic"><i class="fa fa-italic"></i></button>
+        <button class="btn btn-default" data-edit="underline" title="Underline"><i class="fa fa-underline"></i></button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-default" data-edit="justifyleft"><i class="fa fa-align-left"></i></button>
+        <button class="btn btn-default" data-edit="justifycenter"><i class="fa fa-align-center"></i></button>
+        <button class="btn btn-default" data-edit="justifyright"><i class="fa fa-align-right"></i></button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-default" data-edit="undo"><i class="fa fa-undo"></i></button>
+        <button class="btn btn-default" data-edit="redo"><i class="fa fa-repeat"></i></button>
+      </div>
+
+      <div class="btn-group">
+        <div class="input-group" style="width: 100px; height: 30px;">
+          <input type="color" id="fontColor" onchange="changeColor()" class="form-control form-control-color"
+            title="Text Color">
+        </div>
+      </div>
+
+
+      <!-- Editor -->
+    </div>
+    <div id="editor" contenteditable="true">
+      Enter your text here...
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+<!-- footer -->
+<footer class="footer">
+  2023T01851 - W.M.S.H.Bandara
+</footer>
+
+</html>
